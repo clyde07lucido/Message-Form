@@ -14,6 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .contact-left {
@@ -82,6 +83,7 @@ body {
     border-radius: 50px;
     background: linear-gradient(270deg, #390b97, #29edff);
     cursor: pointer;
+    width: 100%;
 }
 
 .contact-right img {
@@ -94,11 +96,31 @@ body {
 }
 
 @media (max-width:800px) {
+    .contact-container {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+    }
+
+    .contact-left {
+        align-items: center; /* Center align inputs */
+        width: 90%; /* Limit width on mobile */
+    }
+
     .contact-inputs {
-        width: 80vh;
+        width: 100%; /* Full width inputs */
+        padding-left: 15px; /* Adjust padding */
     }
 
     .contact-right {
-        display: none;
+        display: none; /* Hide image on mobile */
+    }
+
+    .contact-left-title h2 {
+        font-size: 30px; /* Adjust font size for mobile */
+    }
+
+    .contact-left-title h4 {
+        font-size: 16px; /* Adjust font size for mobile */
     }
 }
