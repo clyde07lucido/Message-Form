@@ -83,16 +83,17 @@ body {
     border-radius: 50px;
     background: linear-gradient(270deg, #390b97, #29edff);
     cursor: pointer;
-    width: 100%;
+    width: 35%;
 }
 
 .contact-right img {
     height: 500px;
+    margin-right: 10px;
 }
 
 .contact-left img {
     height: 15px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 @media (max-width:800px) {
