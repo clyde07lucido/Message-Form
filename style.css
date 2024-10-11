@@ -14,7 +14,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .contact-left {
@@ -83,45 +82,22 @@ body {
     border-radius: 50px;
     background: linear-gradient(270deg, #390b97, #29edff);
     cursor: pointer;
-    width: 35%;
 }
 
 .contact-right img {
     height: 500px;
-    margin-right: 10px;
 }
 
-.contact-left img {
+.contact-left button img {
     height: 15px;
-    margin-left: 20px;
 }
 
-@media (max-width:800px) {
-    .contact-container {
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Center vertically */
-        align-items: center; /* Center horizontally */
-    }
-
-    .contact-left {
-        align-items: center; /* Center align inputs */
-        width: 90%; /* Limit width on mobile */
-    }
-
+@media (max-width: 800px) {
     .contact-inputs {
-        width: 100%; /* Full width inputs */
-        padding-left: 15px; /* Adjust padding */
+        width: 80vw;
     }
 
     .contact-right {
-        display: none; /* Hide image on mobile */
-    }
-
-    .contact-left-title h2 {
-        font-size: 30px; /* Adjust font size for mobile */
-    }
-
-    .contact-left-title h4 {
-        font-size: 16px; /* Adjust font size for mobile */
+        display: none;
     }
 }
